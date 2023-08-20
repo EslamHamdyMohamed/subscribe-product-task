@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="43bdba02-294f-4256-a1d6-4e50eb3f5959" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/subcription.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/cron/helper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/cron/jobs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/exchange/requests/subscription.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/exchange/validation/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/exchange/validation/subscription.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/constants.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/subscription.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/subscription.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/Subscription.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/subscription.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/helper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/models/Product/product.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/models/Product/subscription.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/models/transfer/account.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/models/user/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/responses.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/providers/app.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subscribe-product.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/gorm.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/setup.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/transfer_test.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///snap/go/current" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2UCfVCxA9UpcU3JtYeqVR4goYgD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/home/eslamhamdy/projects/transfer_money",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="subscribe-product" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="subscribe-product" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43bdba02-294f-4256-a1d6-4e50eb3f5959" name="Changes" comment="" />
+      <created>1692448504470</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692448504470</updated>
+      <workItem from="1692448506029" duration="16232000" />
+      <workItem from="1692515620377" duration="5298000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
