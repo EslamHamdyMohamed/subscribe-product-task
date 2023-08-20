@@ -6,6 +6,7 @@ import (
 	"subscribe-product/app/cron"
 	"subscribe-product/database"
 	"subscribe-product/providers"
+	"subscribe-product/seeders"
 	"time"
 )
 
@@ -16,6 +17,7 @@ func main() {
 	}
 	database.ConnectToDatabase()
 	database.MigrateAll()
+	seeders.Seed()
 
 	s := gocron.NewScheduler(time.UTC)
 	cron.Jobs(s)

@@ -1,9 +1,10 @@
 package models
 
 import (
-	appHelper "subscribe-product/app/helpers"
+	appHelper "subscribe-product/app/exchange"
 	"subscribe-product/database"
 	"subscribe-product/database/models/Product"
+	"time"
 )
 
 func CreateSubscription(subscription Product.Subscription) error {
@@ -31,22 +32,12 @@ func FindOrFailSubscription(userId, productId uint, timeInterval appHelper.TimeI
 	return true, err, subscription
 }
 
-func FindOrFailProduct(productId uint) (bool, error, Product.Product) {
-	var product Product.Product
-	db := database.DB
-	err := db.Where("product_id", productId).
-		Find(&product).Error
-	if product.ID == 0 {
-		return false, err, product
-	}
-	return true, err, product
-}
-
 func GetRequiredSubscriptions(status appHelper.Status, limit, offset int) (error, []Product.Subscription) {
 	var subscriptions []Product.Subscription
+	currentDate := time.Now().Format("2006-01-02")
 	db := database.DB
-	err := db.Where("status", appHelper.PAID).
-		Where("end_date", ">=", "start_date").
+	err := db.Where("status", status).
+		Where("end_date = ?", currentDate).
 		Limit(limit).Offset(offset).
 		Find(&subscriptions).Error
 	return err, subscriptions

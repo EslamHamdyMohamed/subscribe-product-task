@@ -4,37 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43bdba02-294f-4256-a1d6-4e50eb3f5959" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/subcription.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/cron/helper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/cron/jobs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/exchange/requests/subscription.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/exchange/validation/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/exchange/validation/subscription.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/constants.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/subscription.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/subscription.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/Subscription.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/subscription.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/helper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/models/Product/product.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/models/Product/subscription.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/models/transfer/account.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/models/user/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/error.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/responses.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/providers/app.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subscribe-product.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/gorm.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/setup.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/transfer_test.go" afterDir="false" />
+    <list default="true" id="43bdba02-294f-4256-a1d6-4e50eb3f5959" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/app/models/product.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seeders/seed.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/cron/jobs.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/cron/jobs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/exchange/requests/subscription.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/exchange/requests/subscription.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/exchange/validation/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/exchange/validation/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/exchange/validation/subscription.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/exchange/validation/subscription.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/exchange/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/subscription.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/subscription.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/subscription.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/subscription.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/subscription.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/subscription.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/models/Product/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/models/Product/product.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/models/Product/subscription.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/models/Product/subscription.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/models/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/models/user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/gorm.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/setup.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/transfer_test.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +58,7 @@
     "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/home/eslamhamdy/projects/transfer_money",
+    "last_opened_file_path": "/home/eslamhamdy/projects/subscribe-product",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +70,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/exchange" />
     </key>
   </component>
   <component name="RunManager">
@@ -107,12 +100,17 @@
       <option name="presentableId" value="Default" />
       <updated>1692448504470</updated>
       <workItem from="1692448506029" duration="16232000" />
-      <workItem from="1692515620377" duration="5298000" />
+      <workItem from="1692515620377" duration="7241000" />
+      <workItem from="1692555457372" duration="5571000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

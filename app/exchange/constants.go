@@ -1,4 +1,4 @@
-package helpers
+package exchange
 
 type TimeInterval string
 
@@ -12,4 +12,5 @@ type Status string
 const (
 	PENDING Status = "PENDING"
 	PAID    Status = "PAID"
+	EXPIRED Status = "EXPIRED"
 )

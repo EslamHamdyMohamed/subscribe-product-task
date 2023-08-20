@@ -1,6 +1,8 @@
 package validation
 
-import appHelper "subscribe-product/app/helpers"
+import (
+	appHelper "subscribe-product/app/exchange"
+)
 
 var TimeIntervalsMap = map[appHelper.TimeInterval]bool{}
 

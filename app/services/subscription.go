@@ -1,6 +1,7 @@
 package services
 
 import (
+	"subscribe-product/app/exchange"
 	"subscribe-product/app/exchange/requests"
 	appHelper "subscribe-product/app/helpers"
 	"subscribe-product/app/models"
@@ -9,26 +10,26 @@ import (
 )
 
 func SubscribeService(request requests.SubscriptionRequest) error {
-	check, err, subscription := models.FindOrFailSubscription(request.UserID, request.ProductID, request.TimeInterval, appHelper.PENDING)
+	check, err, subscription := models.FindOrFailSubscription(request.UserID, request.ProductID, request.TimeInterval, exchange.PENDING)
 	if helpers.CheckError(err) {
 		return err
 	}
 	if check {
-		err = PayBill(subscription)
+		err = UpdateBill(subscription, exchange.PAID)
 	} else {
-		err = GenerateBill(request, appHelper.PAID)
+		err = GenerateBill(request, exchange.PAID)
 	}
 	return err
 }
 
-func GenerateBill(request requests.SubscriptionRequest, status appHelper.Status) error {
+func GenerateBill(request requests.SubscriptionRequest, status exchange.Status) error {
 	subscriptionRow := appHelper.SetSubscriptionRow(request, status)
 	err := models.CreateSubscription(subscriptionRow)
 	return err
 }
 
-func PayBill(subscription Product.Subscription) error {
-	updated := appHelper.SetSubscriptionWithStatus(subscription, appHelper.PAID)
+func UpdateBill(subscription Product.Subscription, status exchange.Status) error {
+	updated := appHelper.SetSubscriptionWithStatus(subscription, status)
 	err := models.UpdateSubscriptionStatus(subscription, updated)
 	return err
 }
